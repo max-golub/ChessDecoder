@@ -1,0 +1,9 @@
+Data preprocessing:
+idea 1: generate every possibility for a single chess game, feed into transformer 
+    try beginnings of games with sog:2 context, sog:3 context, all the way until sog:fullblock 
+    maybe emphasize the start of game character in attention
+idea 2: randomly pick sections of each game to use 
+It may be a good idea to only focus on the first part of the games for higher accuracy and focusing on better model 
+a whole game would be near impossible with this model (first 16 for now)
+
+Positional encoding: Use sin positional encoding like in paper

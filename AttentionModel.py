@@ -99,6 +99,8 @@ class BigramLanguageModel(nn.Module):
             B, T, C = logits.shape
             logits = logits.view(B*T, C)
             targets = targets.view(B*T)
+            z= logits.shape
+            w=targets.shape
             loss = F.cross_entropy(logits, targets)
 
         return logits, loss
